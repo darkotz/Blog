@@ -1,0 +1,12 @@
+---
+layout: layout.liquid
+---
+<article>
+    <h2>{{ title }}</h2>
+    <p style="color: grey;">Publicerad: {{ date | date: "%Y-%m-%d" }} {% if tags %}| Taggar: {{ tags | join: ', ' }}{% endif %}</p>
+    
+    {{ content }}
+    
+    <br>
+    <a href="/archive/" class="read-more">Tillbaka till arkivet</a>
+</article>
